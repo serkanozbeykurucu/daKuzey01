@@ -149,6 +149,7 @@ namespace daKuzey01
             this.btnekleentity.TabIndex = 12;
             this.btnekleentity.Text = "Ekle (Entity)";
             this.btnekleentity.UseVisualStyleBackColor = true;
+            this.btnekleentity.Click += new System.EventHandler(this.btnekleentity_Click);
             // 
             // btnekleentitysp
             // 
@@ -179,6 +180,7 @@ namespace daKuzey01
             this.Controls.Add(this.txturunad);
             this.Name = "Urunfrm";
             this.Text = "Urunfrm";
+            this.Load += new System.EventHandler(this.Urunfrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nbirimfiyat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgurun)).EndInit();
             this.ResumeLayout(false);
