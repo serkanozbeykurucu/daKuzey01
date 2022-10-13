@@ -152,7 +152,7 @@ namespace daKuzey01
             grdtazele();
 
             //test
-
+//tes2
         }
 
 
