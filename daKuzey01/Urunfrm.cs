@@ -151,12 +151,7 @@ namespace daKuzey01
             baglan.Close();
             grdtazele();
 
-
-
-
-
-
-
+            //test
 
         }
 
