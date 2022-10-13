@@ -42,6 +42,12 @@ namespace daKuzey01
             this.btnekleadosp = new System.Windows.Forms.Button();
             this.btnekleentity = new System.Windows.Forms.Button();
             this.btnekleentitysp = new System.Windows.Forms.Button();
+            this.btnsilado = new System.Windows.Forms.Button();
+            this.btnsiladosp = new System.Windows.Forms.Button();
+            this.Ara_ado = new System.Windows.Forms.Button();
+            this.Ara_adosp = new System.Windows.Forms.Button();
+            this.guncel_ado = new System.Windows.Forms.Button();
+            this.guncelle_adosp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nbirimfiyat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgurun)).BeginInit();
             this.SuspendLayout();
@@ -160,11 +166,72 @@ namespace daKuzey01
             this.btnekleentitysp.Text = "Ekle (Entity SP)";
             this.btnekleentitysp.UseVisualStyleBackColor = true;
             // 
+            // btnsilado
+            // 
+            this.btnsilado.Location = new System.Drawing.Point(548, 21);
+            this.btnsilado.Name = "btnsilado";
+            this.btnsilado.Size = new System.Drawing.Size(109, 23);
+            this.btnsilado.TabIndex = 13;
+            this.btnsilado.Text = "Sil(Ado)";
+            this.btnsilado.UseVisualStyleBackColor = true;
+            this.btnsilado.Click += new System.EventHandler(this.btnsilado_Click);
+            // 
+            // btnsiladosp
+            // 
+            this.btnsiladosp.Location = new System.Drawing.Point(548, 50);
+            this.btnsiladosp.Name = "btnsiladosp";
+            this.btnsiladosp.Size = new System.Drawing.Size(109, 23);
+            this.btnsiladosp.TabIndex = 13;
+            this.btnsiladosp.Text = "Sil(Ado SP)";
+            this.btnsiladosp.UseVisualStyleBackColor = true;
+            // 
+            // Ara_ado
+            // 
+            this.Ara_ado.Location = new System.Drawing.Point(683, 19);
+            this.Ara_ado.Name = "Ara_ado";
+            this.Ara_ado.Size = new System.Drawing.Size(109, 23);
+            this.Ara_ado.TabIndex = 13;
+            this.Ara_ado.Text = "Ara(Ado)";
+            this.Ara_ado.UseVisualStyleBackColor = true;
+            // 
+            // Ara_adosp
+            // 
+            this.Ara_adosp.Location = new System.Drawing.Point(683, 48);
+            this.Ara_adosp.Name = "Ara_adosp";
+            this.Ara_adosp.Size = new System.Drawing.Size(109, 23);
+            this.Ara_adosp.TabIndex = 13;
+            this.Ara_adosp.Text = "Ara(Ado SP)";
+            this.Ara_adosp.UseVisualStyleBackColor = true;
+            // 
+            // guncel_ado
+            // 
+            this.guncel_ado.Location = new System.Drawing.Point(808, 19);
+            this.guncel_ado.Name = "guncel_ado";
+            this.guncel_ado.Size = new System.Drawing.Size(109, 23);
+            this.guncel_ado.TabIndex = 13;
+            this.guncel_ado.Text = "Güncelle(Ado)";
+            this.guncel_ado.UseVisualStyleBackColor = true;
+            // 
+            // guncelle_adosp
+            // 
+            this.guncelle_adosp.Location = new System.Drawing.Point(808, 48);
+            this.guncelle_adosp.Name = "guncelle_adosp";
+            this.guncelle_adosp.Size = new System.Drawing.Size(109, 23);
+            this.guncelle_adosp.TabIndex = 13;
+            this.guncelle_adosp.Text = "Güncelle(Ado SP)";
+            this.guncelle_adosp.UseVisualStyleBackColor = true;
+            // 
             // Urunfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(938, 450);
+            this.ClientSize = new System.Drawing.Size(1036, 450);
+            this.Controls.Add(this.guncelle_adosp);
+            this.Controls.Add(this.Ara_adosp);
+            this.Controls.Add(this.btnsiladosp);
+            this.Controls.Add(this.guncel_ado);
+            this.Controls.Add(this.Ara_ado);
+            this.Controls.Add(this.btnsilado);
             this.Controls.Add(this.btnekleentitysp);
             this.Controls.Add(this.btnekleentity);
             this.Controls.Add(this.btnekleadosp);
@@ -203,5 +270,11 @@ namespace daKuzey01
         private System.Windows.Forms.Button btnekleadosp;
         private System.Windows.Forms.Button btnekleentity;
         private System.Windows.Forms.Button btnekleentitysp;
+        private System.Windows.Forms.Button btnsilado;
+        private System.Windows.Forms.Button btnsiladosp;
+        private System.Windows.Forms.Button Ara_ado;
+        private System.Windows.Forms.Button Ara_adosp;
+        private System.Windows.Forms.Button guncel_ado;
+        private System.Windows.Forms.Button guncelle_adosp;
     }
 }

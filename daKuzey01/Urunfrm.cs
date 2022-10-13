@@ -62,6 +62,10 @@ namespace daKuzey01
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@vurunad",txturunad.Text);
             cmd.Parameters.AddWithValue("@vfiyat", nbirimfiyat.Value);
+            
+            cmd.Parameters.AddWithValue("@vtedid", cmbtedarik.SelectedValue);
+            cmd.Parameters.AddWithValue("@vkatid", cmbkategori.SelectedValue);
+
             cmd.ExecuteNonQuery();
             conn.Close();
 
@@ -129,6 +133,33 @@ namespace daKuzey01
         private void Urunfrm_Load(object sender, EventArgs e)
         {
             cmbdoldur();
+            grdtazele();
         }
+
+        private void btnsilado_Click(object sender, EventArgs e)
+        {
+            SqlConnection baglan = new SqlConnection(constr);
+            baglan.Open();
+
+            SqlCommand komutsil = new SqlCommand();
+            komutsil.Connection = baglan;
+            //int silinecek = dgurun.CurrentRow.Cells[0].Value;
+            komutsil.CommandText = "delete from Urunler where UrunID="+ dgurun.CurrentRow.Cells[0].Value;
+
+            komutsil.ExecuteNonQuery();
+
+            baglan.Close();
+            grdtazele();
+
+
+
+
+
+
+
+
+        }
+
+
     }
 }
